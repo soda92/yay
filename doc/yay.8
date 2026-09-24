@@ -386,6 +386,15 @@ Keep pkg/ and src/ after building packages
 Separate query results by source, AUR and sync
 
 .TP
+.B \-\-colorpalette \fI<palette>\fR
+Select the color palette used for colored output (subject to pacman's
+\fBColor\fR option and \fB--color\fR, same as \fB--color\fR itself).
+\fBdefault\fR uses the standard ANSI colors, while \fBlight\fR uses darker
+256-color shades (dark amber instead of yellow, etc.) that remain readable on
+light/white terminal backgrounds. Can also be set with \fBcolorpalette\fR in
+the JSON config file or \fByay.opt.color_palette\fR in init.lua.
+
+.TP
 .B \-\-redownload
 Always download pkgbuilds of targets even when a copy is available in cache.
 

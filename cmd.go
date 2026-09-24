@@ -191,6 +191,7 @@ func usage(logger *text.Logger) {
 		{"--topdown", gotext.Get("Shows repository's packages first and then AUR's")},
 		{"--singlelineresults", gotext.Get("List each search result on its own line")},
 		{"--doublelineresults", gotext.Get("List each search result on two lines, like pacman")},
+		{"--colorpalette <name>", gotext.Get("Color palette for output: 'default' ANSI colors or 'light' for light terminal backgrounds")},
 		{},
 		{"--devel", gotext.Get("Check development packages during sysupgrade")},
 		{"--rebuild", gotext.Get("Always build target packages")},

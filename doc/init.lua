@@ -52,6 +52,9 @@ yay.opt.separate_sources = true
 yay.opt.debug = false
 yay.opt.rpc = true
 yay.opt.double_confirm = true
+-- Color palette: "" or "default" for standard ANSI colors, "light" for
+-- darker 256-color shades readable on light/white terminal backgrounds.
+yay.opt.color_palette = ""
 
 -- Hooks
 -- Run Lua before yay prints the upgrade exclusion menu. Return package names

@@ -118,6 +118,10 @@ func NewRuntime(cfg *settings.Configuration, cmdArgs *parser.Arguments, version 
 	// FIXME: get rid of global
 	text.UseColor = useColor
 
+	if err := text.SetPalette(cfg.ColorPalette); err != nil {
+		return nil, err
+	}
+
 	cmdBuilder := exe.NewCmdBuilder(cfg, runner, logger.Child("cmdbuilder"), pacmanConf.DBPath)
 
 	vcsStore := vcs.NewInfoStore(

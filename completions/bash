@@ -78,7 +78,7 @@ _yay() {
           provides pgpfetch
           useask combinedupgrade aur repo makepkgconf
           nomakepkgconf askremovemake askyesremovemake removemake noremovemake completioninterval aururl aurrpcurl
-          searchby batchinstall'
+          searchby batchinstall colorpalette'
     'b d h q r v')
   yays=('clean gendb' 'c')
   show=('complete defaultconfig currentconfig stats news' 'c d g s w')
@@ -91,7 +91,7 @@ _yay() {
 
   if [[ $? != 0 ]]; then
     _arch_ptr2comp core
-  elif [[ ! $prev =~ ^-[[:alnum:]_]*[Vbhr] && ! $prev == --@(cachedir|color|config|dbpath|help|hookdir|gpgdir|logfile|root|version) ]]; then
+  elif [[ ! $prev =~ ^-[[:alnum:]_]*[Vbhr] && ! $prev == --@(cachedir|color|colorpalette|config|dbpath|help|hookdir|gpgdir|logfile|root|version) ]]; then
     [[ $cur == -* ]] && _arch_ptr2comp ${o#* } common ||
       case ${o% *} in
       D | R)

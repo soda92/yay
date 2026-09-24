@@ -207,6 +207,7 @@ complete -c $progname -n "not $noopt" -l requestsplitn -d 'Max amount of package
 complete -c $progname -n "not $noopt" -l completioninterval -d 'Refresh interval for completion cache' -x
 complete -c $progname -n "not $noopt" -l sortby -d 'Sort AUR results by a specific field during search' -xa "{votes,popularity,name,base,submitted,modified}"
 complete -c $progname -n "not $noopt" -l searchby -d 'Search for AUR packages by querying the specified field' -xa "{name,name-desc,maintainer,depends,checkdepends,makedepends,optdepends}"
+complete -c $progname -n "not $noopt" -l colorpalette -d 'Select the color palette for colored output' -xa "{default,light}"
 complete -c $progname -n "not $noopt" -l answerclean -d 'Set a predetermined answer for the clean build menu' -xa "{All,None,Installed,NotInstalled}"
 complete -c $progname -n "not $noopt" -l answerdiff -d 'Set a predetermined answer for the edit diff menu' -xa "{All,None,Installed,NotInstalled}"
 complete -c $progname -n "not $noopt" -l answeredit -d 'Set a predetermined answer for the edit pkgbuild menu' -xa "{All,None,Installed,NotInstalled}"

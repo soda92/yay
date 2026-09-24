@@ -70,6 +70,7 @@ type Configuration struct {
 	Debug                  bool   `json:"debug" lua:"debug"`
 	UseRPC                 bool   `json:"rpc" lua:"rpc"`
 	DoubleConfirm          bool   `json:"doubleconfirm" lua:"double_confirm"` // confirm install before and after build
+	ColorPalette           string `json:"colorpalette" lua:"color_palette"`   // default or light; "" means default
 
 	CompletionPath string `json:"-" lua:"-"`
 	VCSFilePath    string `json:"-" lua:"-"`

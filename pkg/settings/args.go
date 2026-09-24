@@ -80,6 +80,8 @@ func (c *Configuration) handleOption(option, value string) bool {
 		c.SortBy = value
 	case "searchby":
 		c.SearchBy = value
+	case "colorpalette":
+		c.ColorPalette = value
 	case "noconfirm":
 		NoConfirm = boolValue
 	case "config":
